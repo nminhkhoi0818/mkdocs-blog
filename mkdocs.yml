@@ -1,0 +1,20 @@
+site_name: Khoi Nguyen's Blog
+theme:
+  name: terminal
+  palette: pink
+nav:
+  - Home: index.md
+  - Fundamentals:
+      - Git: fundamentals/git.md
+      - Python: fundamentals/python.md
+  - Frontend:
+      - HTML: frontend/html.md
+      - CSS: frontend/css.md
+      - JavaScript: frontend/js.md
+      - Angular: frontend/angular.md
+      - Interview: frontend/interview.md
+  - Clean Code:
+      - Introduction: clean-code/introduction.md
+      - Design Patterns: clean-code/design-patterns.md
+extra_css:
+  - css/custom.css
