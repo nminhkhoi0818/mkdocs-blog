@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Angular - Khoi Nguyen's Blog</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- pink color palette -->
+<link href="../../css/palettes/pink.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../../css/custom.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Khoi Nguyen's Blog</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">Home</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Fundamentals</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/git/">Git</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/python/">Python</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Frontend</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../html/">HTML</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../css/">CSS</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../js/">JavaScript</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Angular</span>
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../interview/">Interview</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Clean Code</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../clean-code/introduction/">Introduction</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../clean-code/design-patterns/">Design Patterns</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#lich-su-angular">Lịch sử Angular</a></li>
+        <li><a href="#module-component">Module, component</a></li>
+        <li><a href="#directives">Directives</a></li>
+        <li><a href="#angular-lifecycle-hooks">Angular lifecycle hooks</a></li>
+        <li><a href="#binding">Binding</a></li>
+        <li><a href="#routing">Routing</a></li>
+        <li><a href="#dependency-injection">Dependency Injection</a></li>
+        <li><a href="#rxjs-map-of-from">Rxjs (map, of, from)</a></li>
+        <li><a href="#ngrx">Ngrx</a></li>
+        <li><a href="#design-patterns">Design patterns</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h2 id="lich-su-angular">Lịch sử Angular</h2>
+<ul>
+<li>2010: được support bởi Google, SPA, không còn phụ thuộc vào server, Iconic hợp tác</li>
+<li>2014 - 2015: Angular chạm ngưỡng, chuẩn mới của JS, Angular trở nên tuột hậu, xây dựng lại toàn bộ</li>
+<li>2016: không biết maintain, làm sao migrate từ Angular.js, cú pháp xa lạ Angular 2.0</li>
+<li>2018: Improve và ra nhiều bản cập nhật mới</li>
+</ul>
+<h2 id="module-component">Module, component</h2>
+<ul>
+<li>NgModule là một decorator để xác định một module. Thành phần của NgModule gồm declarations, imports, exports, providers, bootstrap</li>
+<li>NgComponent: quản lý một phần giao diện, chứa logic và sử lý sự kiện. Component có thể lồng nhau. Standalone component giúp component tự quản lý dependencies, loại bỏ sự phụ thuộc vào module.</li>
+</ul>
+<h2 id="directives">Directives</h2>
+<ul>
+<li>Component Directive: là component trong angular</li>
+<li>Structural Directive: thay đổi cấu trúc của DOM bằng thêm, xóa hoặc thay đổi phần tử trong DOM</li>
+<li>Attribute Directive: thay đổi giao diện hoặc hành vi HTML, sử dụng với decorator Directive</li>
+</ul>
+<h2 id="angular-lifecycle-hooks">Angular lifecycle hooks</h2>
+<ul>
+<li>Constructor (khai báo dependency injection)</li>
+<li>ngOnChanges (gọi khi có sự thay đổi giá trị Input của component)</li>
+<li>ngOnInit (gọi duy nhất 1 lần để khởi tạo giá trị cho biến, call api, khởi tạo form, ...)</li>
+<li>ngDoCheck</li>
+<li>ngAfterContentInit</li>
+<li>ngAfterContentChecked</li>
+<li>ngAfterViewInit</li>
+<li>ngAfterViewChecked</li>
+<li>ngOnDestroy</li>
+</ul>
+<h2 id="binding">Binding</h2>
+<ul>
+<li>[property-binding]</li>
+<li>(event-binding)</li>
+</ul>
+<h2 id="routing">Routing</h2>
+<ul>
+<li>Điều hướng component theo URL</li>
+<li>router-outlet</li>
+<li>routerLink</li>
+</ul>
+<h2 id="dependency-injection">Dependency Injection</h2>
+<ul>
+<li>DI là một design pattern tách việc khởi tạo ra việc sử dụng, giúp dễ bảo trì. Các thành phần chính trong DI: Provider, Injector, Token, Dependency</li>
+<li>Một class có thể đăng ký sử dụng dependency thông constructor</li>
+<li>Khi component được khởi tạo, Angular sẽ inject một instance của service vào constructor</li>
+<li>Service</li>
+<li>Inject dependencies</li>
+</ul>
+<h1 id="rxjs-map-of-from">Rxjs (map, of, from)</h1>
+<ul>
+<li>Rxjs là một thư viện để làm việc với reactive programming bằng cách sử dụng Observable. Giúp xử lý các luồng sự kiện bất đồng bộ. Rxjs thường được sử dụng trong các ứng dụng Angular.</li>
+<li>Observable: là một đối tượng đại diện cho luồng dữ liệu hoặc sự kiện, có thể được quan sát bởi observer. Observable phá</li>
+<li>Observer: là một đối tượng có ba phương thức next, error, complete</li>
+<li>Subscription: là đối tượng được tạo ra khi subscribe vào một observable</li>
+<li>Operators: là các hàm dùng để biến đổi các giá trị Observable</li>
+<li>
+<p>Subjects: là một Observable đặc biệt vừa là Observer</p>
+</li>
+<li>
+<p>Các operators thường gặp:</p>
+</li>
+<li>map: chuyển đổi giá trị từ Observable</li>
+</ul>
+<pre><code class="language-js">productPrices$
+  .pipe(map((price) =&gt; price * exchangeRate))
+  .subscribe((vndPrice) =&gt; console.log(vndPrice));
+</code></pre>
+<ul>
+<li>filter: lọc các giá trị theo điều kiện</li>
+<li>tap: thực hiện side effect mà không thay đổi giá trị</li>
+<li>mergeMap: chuyển đổi giá trị thành Observable và hợp nhất kết quả</li>
+<li>switchMap: chuyển đổi giá trị thành Observable và hủy bỏ Observable nếu có giá trị mới</li>
+<li>debounceTime: trì hoãn giá trị phát ra sau một khoảng thời gian nhất định. Sử dụng khi search keywords, nếu có một cụm từ hạn chế search từng chữ cái</li>
+<li>catchError: bắt lỗi và xử lý</li>
+<li>concat: kết nối các Observable theo thứ tự</li>
+<li>tap: thực hiện side effect mà không làm thay đổi giá trị (console.log(), ...)</li>
+<li>distinctUntilChanged: phát ra giá trị khi nó khác với giá trị trước đó</li>
+<li>retry: tự động thử lại với số lần nhất định</li>
+</ul>
+<h1 id="ngrx">Ngrx</h1>
+<ul>
+<li>Ngrx là state management solution, state là data thay đổi sử dụng ở nhiều components. Manage complex applications.</li>
+<li>State store: components có thể listen data in there</li>
+<li>Redux pattern</li>
+<li>Actions, Reducers, Store, Selectors, Effects</li>
+<li>State management</li>
+<li>Effects: không trực tiếp liên quan đến update UI, HTTP Request, localStorage, logging là side effect vì không update UI</li>
+</ul>
+<h1 id="design-patterns">Design patterns</h1>
+<ul>
+<li>Singleton: quản lý một instance trong suốt ứng dụng</li>
+<li>Observer Pattern: Pub/Sub</li>
+</ul>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

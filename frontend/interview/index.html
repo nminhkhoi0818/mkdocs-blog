@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Interview - Khoi Nguyen's Blog</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- pink color palette -->
+<link href="../../css/palettes/pink.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../../css/custom.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Khoi Nguyen's Blog</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">Home</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Fundamentals</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/git/">Git</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/python/">Python</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Frontend</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../html/">HTML</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../css/">CSS</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../js/">JavaScript</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../angular/">Angular</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Interview</span>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Clean Code</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../clean-code/introduction/">Introduction</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../clean-code/design-patterns/">Design Patterns</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#pass-by-value-and-pass-by-reference-in-javascript">Pass by Value and Pass by Reference in Javascript</a></li>
+        <li><a href="#whats-the-difference-between-a-variable-that-is-null-undefined-or-undeclared">What's the difference between a variable that is: null, undefined or undeclared?</a></li>
+        <li><a href="#whats-the-difference-between-inline-and-inline-block">What's the difference between inline and inline-block?</a></li>
+        <li><a href="#describe-the-difference-between-a-cookie-sessionstorage-and-localstorage">Describe the difference between a cookie, sessionStorage and localStorage.</a></li>
+        <li><a href="#localstorage">LocalStorage</a></li>
+        <li><a href="#sessionstorage">SessionStorage</a></li>
+        <li><a href="#cookie">Cookie</a></li>
+        <li><a href="#bem-block-element-modifier">BEM (Block, Element, Modifier)</a></li>
+        <li><a href="#truthy-falsy-la-gi">Truthy, Falsy là gì?</a></li>
+        <li><a href="#the-span-va-div-khac-nhau-nhu-the-nao-ke-ten-cac-the-block-va-inline">Thẻ Span và Div khác nhau như thế nào? Kể tên các thẻ block và inline?</a></li>
+        <li><a href="#thuoc-tinh-data-la-gi">Thuộc tính data- là gì?</a></li>
+        <li><a href="#nguyen-ly-hoat-ong-cua-stack-va-queue-cac-ung-dung">Nguyên lý hoạt động của stack và queue. Các ứng dụng?</a></li>
+        <li><a href="#xu-ly-ngoai-le">Xử lý ngoại lệ?</a></li>
+        <li><a href="#trong-cac-thuat-toan-thang-nao-nhanh-nhat">Trong các thuật toán thằng nào nhanh nhất?</a></li>
+        <li><a href="#o-phuc-tap-la-gi">Độ phức tạp là gì?</a></li>
+        <li><a href="#relative-va-absolute">Relative và absolute?</a></li>
+        <li><a href="#dom-va-dom-ao">DOM và DOM ảo?</a></li>
+        <li><a href="#client-side-va-server-side">Client side và server side?</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h2 id="pass-by-value-and-pass-by-reference-in-javascript">Pass by Value and Pass by Reference in Javascript</h2>
+<ul>
+<li>Tham trị: String, Number, Boolean</li>
+<li>Tham chiếu: Object, Array</li>
+</ul>
+<h2 id="whats-the-difference-between-a-variable-that-is-null-undefined-or-undeclared">What's the difference between a variable that is: <code>null</code>, <code>undefined</code> or undeclared?</h2>
+<ul>
+<li>Khai báo mà không điền giá trị undefined</li>
+<li>Khai báo mà được gán giá trị, giá trị đó chính là null</li>
+</ul>
+<h2 id="whats-the-difference-between-inline-and-inline-block">What's the difference between <code>inline</code> and <code>inline-block</code>?</h2>
+<ul>
+<li>Block: chiếm toàn bộ width nếu không được set</li>
+<li>Inline: các items sẽ nằm cùng một dòng, không thể set height và width</li>
+<li>Inline-block: các items nằm trên một dòng nhưng có thể set height và width</li>
+</ul>
+<h2 id="describe-the-difference-between-a-cookie-sessionstorage-and-localstorage">Describe the difference between a cookie, <code>sessionStorage</code> and <code>localStorage</code>.</h2>
+<h2 id="localstorage">LocalStorage</h2>
+<ul>
+<li>localStorage giúp lưu trữ dữ liệu vĩnh viễn trên trình duyệt (trừ khi xóa cache)</li>
+<li>Có 2 trường là: key, value</li>
+<li>Lưu trữ dữ liệu trước đó người dùng, settings người dùng (theme)</li>
+</ul>
+<pre><code>window.LocalStorage.setItem('name', 'value');
+window.LocalStorage.getItem('name');
+window.LocalStorage.clear();
+window.LocalStorage.removeItem('name');
+</code></pre>
+<ul>
+<li>Vấn đề không bảo mật, có thể dễ dàng lưu, lấy và sửa</li>
+</ul>
+<h2 id="sessionstorage">SessionStorage</h2>
+<ul>
+<li>sessionStorage cũng tương tự localStorage nhưng dữ liệu sẽ mất khi đóng trình duyệt</li>
+<li>Có thể bị cross-site scripting vì thế không nên lưu trữ các thông tin nhạy cảm như password</li>
+</ul>
+<h2 id="cookie">Cookie</h2>
+<ul>
+<li>Cookie là những tập tin một trang web gửi tới người dùng. Cookie được sử dụng phổ biến để lưu lại phiên đăng nhập</li>
+<li>Request gửi đi server được gửi kèm cookie</li>
+<li>HtttpOnly, code JS ứng dụng bên thứ 3 không thể lấy được dữ liệu cookie</li>
+<li>Cookie có thời gian expire</li>
+</ul>
+<h2 id="bem-block-element-modifier">BEM (Block, Element, Modifier)</h2>
+<pre><code>&lt;form class=&quot;form form--theme-xmas form--simple&quot;&gt;
+  &lt;input class=&quot;form__input&quot; type=&quot;text&quot; /&gt;
+  &lt;input
+    class=&quot;form__submit form__submit--disabled&quot;
+    type=&quot;submit&quot; /&gt;
+&lt;/form&gt;
+</code></pre>
+<h2 id="truthy-falsy-la-gi">Truthy, Falsy là gì?</h2>
+<ul>
+<li>Truthy là những giá trị mà khi encounter in Boolean context thì nó bằng true.</li>
+<li>Falsy là những giá trị mà khi encounter in Boolean context thì nó bằng false.</li>
+</ul>
+<h2 id="the-span-va-div-khac-nhau-nhu-the-nao-ke-ten-cac-the-block-va-inline">Thẻ Span và Div khác nhau như thế nào? Kể tên các thẻ block và inline?</h2>
+<ul>
+<li>span là thẻ inline, thường dùng để chứa dữ liệu</li>
+<li>div là thẻ block, thường dùng để phân nội dung thành các đoạn</li>
+</ul>
+<h2 id="thuoc-tinh-data-la-gi">Thuộc tính data- là gì?</h2>
+<ul>
+<li>Lưu trữ thêm thông tin vào element</li>
+</ul>
+<h2 id="nguyen-ly-hoat-ong-cua-stack-va-queue-cac-ung-dung">Nguyên lý hoạt động của stack và queue. Các ứng dụng?</h2>
+<ul>
+<li>Event loop</li>
+</ul>
+<h2 id="xu-ly-ngoai-le">Xử lý ngoại lệ?</h2>
+<ul>
+<li>Catch thì nhận được trong exception, làm gì với exception đó. Làm 2 thứ: log lại cái lỗi đó, đẩy lên cái kho lưu trữ, bắn về cái lỗi slack. Return cái lỗi cho người dùng, viết lỗi cho dễ hiểu vì nếu bắn lỗi ra trong code thì các người dùng biết code sẽ biết hệ thống hoạt động ra sao.</li>
+<li>Stack trace áp dụng nguyên lý của stack</li>
+</ul>
+<h2 id="trong-cac-thuat-toan-thang-nao-nhanh-nhat">Trong các thuật toán thằng nào nhanh nhất?</h2>
+<ul>
+<li>Không có, trường hợp tệ nhất, trung bình, tốt nhất</li>
+<li>Quick sort độ phức tạp O(nlog(n))</li>
+<li>Bubble sort trường hợp best thì O(n)</li>
+</ul>
+<h2 id="o-phuc-tap-la-gi">Độ phức tạp là gì?</h2>
+<ul>
+<li>Độ phức tạp thuật toán là định lượng tương đối số phép toán mà máy tính phải thực hiện.</li>
+</ul>
+<h2 id="relative-va-absolute">Relative và absolute?</h2>
+<ul>
+<li>Cho hai thằng absolute nó có mối quan hệ cha con</li>
+<li>Relative dựa vào vị trí ban đầu của nó</li>
+</ul>
+<h2 id="dom-va-dom-ao">DOM và DOM ảo?</h2>
+<ul>
+<li>DOM: Ông Browser nhận được file HTML. Browser dựa trên cái quy chuẩn ông đó dịch HTML thành DOM, dựa vào quy chuẩn W3C tạo ra mô hình dạng cây</li>
+<li>Các dự án lớn, DOM Tree rất lớn, mỗi khi DOM đổi phải tính toán lại CSS -&gt; Tốc độ rendering chậm</li>
+<li>Khi React render, React tạo DOM ảo. Khi có sự thay đổi của state, tạo ra DOM đổi. Chạy thuật toán so sánh giữa DOM cũ và mới để tìm ra thành phần được cập nhật. Sau khi tiến hành so sánh, ReactDOM render lại các thành phần cần cập nhật lên DOM thật.</li>
+</ul>
+<h2 id="client-side-va-server-side">Client side và server side?</h2>
+<ul>
+<li>CSR (Client side rendering) - SPA (Single Page Application)</li>
+<li>SSR (Server side rendering) - MPA (Multiple Page Application)</li>
+</ul>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

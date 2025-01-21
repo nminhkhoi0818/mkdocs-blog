@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Design Patterns - Khoi Nguyen's Blog</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- pink color palette -->
+<link href="../../css/palettes/pink.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../../css/custom.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Khoi Nguyen's Blog</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">Home</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Fundamentals</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/git/">Git</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/python/">Python</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Frontend</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../frontend/html/">HTML</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../frontend/css/">CSS</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../frontend/js/">JavaScript</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../frontend/angular/">Angular</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../frontend/interview/">Interview</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Clean Code</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../introduction/">Introduction</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Design Patterns</span>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#design-pattern-la-gi">Design Pattern là gì?</a></li>
+        <li><a href="#nhom-khoi-tao-creational-pattern">Nhóm khởi tạo (Creational Pattern)</a></li>
+        <li><a href="#singleton">Singleton</a></li>
+        <li><a href="#factory-method">Factory Method</a></li>
+        <li><a href="#abstract-factory">Abstract Factory</a></li>
+        <li><a href="#prototype">Prototype</a></li>
+        <li><a href="#builder">Builder</a></li><li><a href="#nhom-cau-truc-structural-patter">Nhóm cấu trúc (Structural Patter)</a></li><li><a href="#adapter">Adapter</a></li>
+        <li><a href="#bridge">Bridge</a></li>
+        <li><a href="#composite">Composite</a></li>
+        <li><a href="#decorator">Decorator</a></li>
+        <li><a href="#facade">Facade</a></li><li><a href="#nhom-tuong-tac-behavioural-pattern">Nhóm tương tác (Behavioural Pattern)</a></li><li><a href="#chain-of-responsibility">Chain of Responsibility</a></li>
+        <li><a href="#iterator">Iterator</a></li><li><a href="#proxy">Proxy</a></li><li><a href="#state">State</a></li><li><a href="#template-method">Template method</a></li>
+        <li><a href="#observer">Observer</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h2 id="design-pattern-la-gi">Design Pattern là gì?</h2>
+<ul>
+<li>Là mẫu giải quyết vấn đề hay gặp do các lập trình viên lúc trước rút ra. Giúp tổ chức code tốt hơn.</li>
+<li>Có 3 loại: creational, structual, behavioural (cách giao tiếp)</li>
+<li>Các design pattern hay dùng: Factory, Facade, Singleton, Observer</li>
+<li>Singleton nếu dùng trong môi trường multithread, bypass private constructor</li>
+<li>Angular (DI, IOC)</li>
+<li>Đừng quá lạm dụng</li>
+<li>Giải quyết vấn đề chứ không phải tăng thêm vấn đề</li>
+<li>Anti-pattern</li>
+</ul>
+<h2 id="nhom-khoi-tao-creational-pattern">Nhóm khởi tạo (Creational Pattern)</h2>
+<h2 id="singleton">Singleton</h2>
+<ul>
+<li>Mỗi class chỉ có tạo một instance</li>
+<li>Sử dụng cho logging, configuration, thread pool, database connections, ...</li>
+</ul>
+<pre><code class="language-ts">class Settings {
+  static instance: Settings;
+  public readonly mode = &quot;dark&quot;;
+
+  private constructor() {}
+
+  static getInstance(): Settings {
+    if (!Settings.instance) {
+      Settings.instance = new Settings();
+    }
+
+    return Settings.instance;
+  }
+}
+
+const settings = Settings.getInstance();
+</code></pre>
+<ul>
+<li>Tuy nhiên, cách dùng này chỉ sử dụng tốt cho single-thread, trong trường hợp multi-thread thì sẽ không đảm bảo được chỉ có 1 instance. Để khắc phục ta sử dụng Thread Safe Singleton.</li>
+<li>Sử dụng keyword synchronized, tuy nhiên cách này sẽ chậm vì bất kỳ thread nào gọi đến đều phải chờ một thread khác đang sử dụng.</li>
+</ul>
+<h2 id="factory-method">Factory Method</h2>
+<ul>
+<li>Định nghĩa interface cho sử dụng object. Thay vì sử dụng từ khóa new để khởi tạo một object, sử dụng function hoặc method</li>
+<li>Sử dụng khi có nhiều loại đối tượng cần khởi tạo (Ex: các loại column)</li>
+<li>Dễ mở rộng, chỉ cần tạo ra class mới và implement vào factory method</li>
+</ul>
+<pre><code class="language-ts">class IOSButton {}
+class AndroidButton {}
+
+const button1 = os === &quot;ios&quot; ? new IOSButton() : new AndroidButton();
+const button2 = os === &quot;ios&quot; ? new IOSButton() : new AndroidButton();
+
+class ButtonFactory {
+  createButton(os: string): IOSButton | AndroidButton {
+    if (os === &quot;ios&quot;) {
+      return new IOSButton();
+    } else {
+      return new AndroidButton();
+    }
+  }
+}
+
+const factory = new ButtonFactory();
+const button1 = factory.createButton(os);
+</code></pre>
+<h1 id="abstract-factory">Abstract Factory</h1>
+<ul>
+<li>Factory của factory</li>
+</ul>
+<h1 id="prototype">Prototype</h1>
+<ul>
+<li>Clone object hiện tại chứ không tạo mới</li>
+<li>Nếu có một object phức tạp và mất nhiều thời gian config. Sử dụng prototype để clone object đó.</li>
+</ul>
+<pre><code class="language-ts">class ConcretePrototype {
+  private property: string;
+
+  constructor(property: string) {
+    this.property = property;
+  }
+
+  clone() {
+    return new ConcretePrototype(this.property);
+  }
+}
+
+const originalObj = new ConcretePrototype(&quot;Original&quot;);
+const clonedObj = originalObj.clone();
+</code></pre>
+<h2 id="builder">Builder</h2>
+<ul>
+<li>Truyền vào tham số trong constructor, nhưng nếu có nhiều tham số thì khó keep tracks tất cả các options.</li>
+<li>Với builder pattern giúp tạo step by step sử dụng method</li>
+<li>Vấn đề của Factory Pattern và Abstract Factory Pattern là khi có quá nhiều thuộc tính thì khi truyền vào factory phải truyền tất cả tham số nếu không thì null</li>
+<li>Khi có nhiều constructor, hãy nghĩ tới Builder</li>
+</ul>
+<pre><code class="language-ts">class BanhMi {
+  constructor(cha: string, pate: string, rau: string, sot: string) {}
+
+  addCha(cha: string) {
+    this.cha = cha;
+    return this;
+  }
+
+  addPate(pate: string) {
+    this.pate = pate;
+    return this;
+  }
+
+  addRau(rau: string) {
+    this.rau = rau;
+    return this;
+  }
+
+  addSot(sot: string) {
+    this.sot = sot;
+    return this;
+  }
+}
+
+new BanhMi(&quot;lua&quot;, &quot;heo&quot;, &quot;can tay&quot;, &quot;bo bam&quot;);
+
+const banhMi = new BanhMi();
+
+// Method chaining
+banhMi.addCha(&quot;gan&quot;).addSot(&quot;ca chua&quot;);
+</code></pre>
+<h2 id="nhom-cau-truc-structural-patter">Nhóm cấu trúc (Structural Patter)</h2>
+<h1 id="adapter">Adapter</h1>
+<ul>
+<li>Adapter Pattern cho phép các objects với interface không liên quan có thể làm việc cùng nhau. Adapter giữ vai trò trung gian giữa 2 objects. Hữu dụng khi integrate một class với hệ thống có sẵn nhưng interface của class không match với hệ thống.</li>
+<li>Đảm bảo nguyên tác Open/Close của SOLID</li>
+</ul>
+<pre><code class="language-ts">class FileLogger {
+  writeToFile(message: string): void {}
+}
+
+interface ILogger {
+  log(message: string): void {}
+}
+
+class LoggerAdapter implements ILogger {
+  fileLogger: FileLogger;
+
+  log(message: string): void {
+    fileLogger.writeToFile(message);
+  }
+}
+</code></pre>
+<h1 id="bridge">Bridge</h1>
+<ul>
+<li>Tách abstraction ra khỏi implementation.</li>
+</ul>
+<h1 id="composite">Composite</h1>
+<ul>
+<li>Nhóm đối tượng theo cấu trúc cây</li>
+</ul>
+<h1 id="decorator">Decorator</h1>
+<ul>
+<li>Cho phép thêm chức năng mới vào đối tượng hiện tại mà không muốn ảnh hưởng tới đối tượng khác. Mỗi khi cần thêm tính năng mới, đối tượng được bọc trong một đối tượng mới.</li>
+</ul>
+<pre><code class="language-ts">interface Coffee() {
+  cost(): number;
+}
+
+class SimpleCoffee implements Coffee {
+  cost(): number {
+    return 5;
+  }
+}
+
+class MilkDecorator implements Coffee {
+  private coffee: Coffee;
+
+  constructor(coffee: Coffee) {
+    this.coffee = coffee;
+  }
+
+  cost(): number {
+    return this.coffee.cost() + 1;
+  }
+}
+</code></pre>
+<h2 id="facade">Facade</h2>
+<p>Cung cấp một interface đơn giản cho một hệ thống phức tạp class, library hoặc framework. Hide low-level details</p>
+<h2 id="nhom-tuong-tac-behavioural-pattern">Nhóm tương tác (Behavioural Pattern)</h2>
+<h1 id="chain-of-responsibility">Chain of Responsibility</h1>
+<p>Truyền request qua một chain handlers đến khi handle request</p>
+<h2 id="iterator">Iterator</h2>
+<p>Cho phép duyệt tuần tự qua cấu trúc dữ liệu phức tạp không để lộ nội dung bên trong</p>
+<h2 id="proxy">Proxy</h2>
+<p>Cung cấp một object như là bản sao của một đối tượng. Proxy sẽ nhận client requests, làm gì đó xong truyền lại cho object thật</p>
+<h2 id="state">State</h2>
+<p>Cho phép một object thay đổi behaviour khi mà state thay đổi. State pattern tách class thành behaviour riêng và giao cho lớp con thực hiện</p>
+<pre><code class="language-ts">class OrderContext {
+  state: OrderState;
+
+  constructor() {
+    this.state = new PendingState(this);
+  }
+
+  setState(state: OrderState) {
+    this.state = state;
+  }
+
+  processOrder() {
+    this.state.processOrder();
+  }
+}
+
+interface OrderState() {
+  processOrder();
+}
+
+class PendingState implements OrderState {
+  context: OrderContext;
+
+  constructor(context: OrderContext) {
+    this.context = context;
+  }
+
+  processOrder() {
+
+  }
+}
+</code></pre>
+<h1 id="template-method">Template method</h1>
+<p>Định nghĩa khung cho một thuật toán trong một phương thức. Các lớp con có thể thay đổi một số bước mà không làm thay đổi cấu trúc chung</p>
+<h1 id="observer">Observer</h1>
+<ul>
+<li>Thông báo đến các objects khác khi state thay đổi</li>
+<li>Sử dụng khi react một sự kiện, eventListener</li>
+<li>Observer Pattern còn gọi là Pub/Sub</li>
+</ul>
+<pre><code class="language-ts">class DataService {
+  private data: string;
+  private observers: Observer[] = [];
+
+  add(observer: Observer) {
+    this.observers.push(observer);
+  }
+
+  notify() {
+    this.observers.forEach((observer) =&gt; observer.update(this.data));
+  }
+}
+</code></pre>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
