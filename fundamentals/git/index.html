@@ -413,10 +413,18 @@ git push origin develop</p>
 <p>Để tạo nhánh mới, switch nhánh sử dụng:</p>
 <p>git checkout -b "feature/827-show-product-list"</p>
 <h2 id="pull-request">Pull request</h2>
-<p>Nếu đó là task: Minor: [ticket-number] - [description]<br />
-VD: Minor: 827 - show product list</p>
-<p>Nếu đó là bug: Patch: [ticket-number] - [description]<br />
-VD: Patch: 828 - Product not show</p>
+<p>Nếu đó là task:<br />
+Branch: feature/[ticket-number]<br />
+PR title: Minor: [ticket-number] - [description]</p>
+<p>VD:<br />
+Branch: feature/827-show-product-list<br />
+PR title: Minor: 827 - Show product list</p>
+<p>Nếu đó là bug:<br />
+Branch: bugfix/[ticket-number]<br />
+PR title: Patch: [ticket-number] - [description]</p>
+<p>VD:<br />
+Branch: bugfix/828-product-not-show<br />
+PR title: Patch: 828 - Product not show</p>
 <h2 id="stash">Stash</h2>
 <p>Trường hợp khá thường gặp là chúng ta code thẳng lên nhánh develop khi thực hiện một task mới. Khi nhận ra thì chúng ta phải checkout để tạo nhánh mới nhưng git yêu cầu phải commit trước khi checkout. Khi đó chỉ cần sử dụng 2 câu lệnh sau:</p>
 <p>git stash</p>
@@ -425,7 +433,7 @@ VD: Patch: 828 - Product not show</p>
 <p>Trong các trường hợp sau khi deploy lên test site hoặc production. Nếu phát hiện ra một bug mới, ngoài việc PR vào dev branch, chúng ta cần cherry pick vào test site hoặc production. Khi đó ta sử dụng:</p>
 <p>git cherry-pick commitSha</p>
 <h2 id="merge-va-rebase">Merge và rebase</h2>
-<p>Giả sửa chúng ta có nhánh develop và feature. Trong hầu hết các hợp merge sẽ được sử dụng, cách merge làm là tạo một commit merge cùng với các commit từ feature vào develop.</p>
+<p>Giả sửa chúng ta có nhánh develop và feature. Trong hầu hết các trường hợp merge sẽ được sử dụng, cách merge làm là tạo một commit merge cùng với các commit từ feature vào develop.</p>
 <p>Rebase giúp cho lịch sử commit đẹp hơn khi thay vì tạo một merge commit, nó sẽ sắp xếp vào develop. Điều này giống như việc chúng ta cherry pick từng commit vào develop.</p>
 <h2 id="commit-nham-message">Commit nhầm message</h2>
 <p>git commit --amend</p>
