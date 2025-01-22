@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>JavaScript - Khoi Nguyen's Blog</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- pink color palette -->
+<link href="../../css/palettes/pink.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../../css/custom.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Khoi Nguyen's Blog</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../..">Home</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Fundamentals</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/git/">Git</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../fundamentals/python/">Python</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Frontend</span>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../html/">HTML</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../css/">CSS</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">JavaScript</span>
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../angular/">Angular</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../interview/">Interview</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+
+        
+            
+    
+        
+        
+            
+            
+            <span class="
+        
+    
+
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Clean Code</span>
+        
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../clean-code/introduction/">Introduction</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../../clean-code/design-patterns/">Design Patterns</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#var-let-va-const">Var, let và const</a></li>
+        <li><a href="#var">Var</a></li><li><a href="#let">Let</a></li><li><a href="#const">Const</a></li><li><a href="#callbacks">Callbacks</a></li>
+        <li><a href="#promise">Promise</a></li>
+        <li><a href="#event-loop">Event loop</a></li>
+        <li><a href="#asyncawait">Async/Await</a></li>
+        <li><a href="#asyncawait-co-the-thay-the-uoc-promise">Async/Await có thể thay thế được Promise</a></li>
+        <li><a href="#this-la-gi">this là gì?</a></li>
+        <li><a href="#arrow-functions">Arrow functions</a></li><li><a href="#execution-context">Execution Context</a></li><li><a href="#this-methods">this methods</a></li>
+        <li><a href="#bind">Bind</a></li><li><a href="#call">Call</a></li><li><a href="#apply">Apply</a></li><li><a href="#map-filter-and-reduce">Map, filter and reduce</a></li>
+        <li><a href="#map-thao-tac-voi-oi-tuong-mang-e-thay-oi-cac-gia-tri">Map (thao tác với đối tượng, mảng để thay đổi các giá trị)</a></li><li><a href="#filter-filter-mang-neu-return-true-thi-giu-lai-phan-tu-false-thi-loai">Filter (Filter mảng nếu return true thì giữ lại phần tử, false thì loại)</a></li><li><a href="#reduce-tinh-luy-cac-gia-tri-tra-ve">Reduce (Tính lũy các giá trị trả về)</a></li><li><a href="#iife-ham-goi-ngay-lap-tuc">IIFE (hàm gọi ngay lập tức)</a></li>
+        
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h2 id="gioi-thieu">Giới thiệu</h2>
+<p>Javascript là scripting language cho Web.</p>
+<h2 id="var-let-va-const">Var, let và const</h2>
+<h3 id="var">Var</h3>
+<p>Trước ES6, khai báo var được sử dụng nhưng tính năng của var là có thể re-declared và updated và đây cũng tồn tại vấn đề của nó.</p>
+<pre><code>var greeter = &quot;hey hi&quot;;
+var times = 4;
+
+if (times &gt; 3) {
+    var greeter = &quot;say Hello instead&quot;;
+}
+
+console.log(greeter) // &quot;say Hello instead&quot;
+</code></pre>
+<p>Nhìn vào đoạn code trên nếu như ta khai báo greeter như một biến global và trong hàm lại vô tình re-declared biến thì có thể dẫn đến biến không mong muốn.</p>
+<h3 id="let">Let</h3>
+<p>Let được tạo ra để giải quyết vấn đề này. Let is block scoped, một block là đoạn code trong dấu {}, điều đó nghĩa là khi vào hàm hay thậm chí if thì các khai báo sẽ khác biệt với nhau.</p>
+<pre><code>let greeting = &quot;say Hi&quot;;
+if (true) {
+    let greeting = &quot;say Hello instead&quot;;
+    console.log(greeting); // &quot;say Hello instead&quot;
+}
+console.log(greeting); // &quot;say Hi&quot;
+</code></pre>
+<h3 id="const">Const</h3>
+<p>Const có scope tương tự let nhưng không thể updated. Tuy nhiên đối với object thì properties của nó có thể updated.</p>
+<pre><code>const greeting = {
+    message: &quot;say Hi&quot;,
+    times: 4
+}
+</code></pre>
+<pre><code>greeting = {
+    words: &quot;Hello&quot;,
+    number: &quot;five&quot;
+} // error:  Assignment to constant variable.
+</code></pre>
+<pre><code>greeting.message = &quot;say Hello instead&quot;;
+</code></pre>
+<h2 id="callbacks">Callbacks</h2>
+<p>Callback chỉ là một hàm mà được truyền vào trong một hàm khác, với mong muốn rằng nó có thể được gọi để thực thi một lúc nào đó. Nhưng khi có quá nhiều callbacks chồng vào nhau sẽ dẫn đến callback hell, làm khó đọc và debug.</p>
+<p><img alt="Callback Hell" src="../../imgs/callback-hell.png" /></p>
+<h2 id="promise">Promise</h2>
+<p>Promise là nền tảng của xử lý bất đồng bộ trong Javascript. Promise là một object được trả về bởi một hàm bất đồng bộ, đại diện cho trạng thái của hiện tại. Chúng ta xét đoạn code sau:</p>
+<pre><code>function myFunction() {
+  new Promise(() =&gt; {
+    console.log(1);
+  });
+  console.log(2);
+}
+</code></pre>
+<p>Ta có thể đoán được kết quả sẽ là 1 và 2 vì chưa có xử lý bất đồng bộ tại đây. Ta hãy nhìn lại đoạn code được thay đổi một chút</p>
+<pre><code>function myFunction() {
+  new Promise((myResolve) =&gt; {
+    myResolve(1);
+  }).then(value =&gt; console.log(value));
+  console.log(2);
+}
+</code></pre>
+<p>Bạn có thể đoán được kết quả lúc này? Đáp án là 2 và 1, tại sao lại như vậy?</p>
+<h2 id="event-loop">Event loop</h2>
+<p>Javascript có một runtime model dựa trên event loop, giúp thực thi code, collect và process events cũng như xử lý sub-tasks.</p>
+<p><img alt="Event Loop" src="../../imgs/event-loop-2.png" /></p>
+<p>Điều cần biết là Javascript sử dụng single-thread run time. Để giúp xử lý bất đồng bộ đó là nhờ vào Web APIs, ví dụ như setTimeout() khi được gọi sẽ gọi API Timing để đếm và sau khi hoàn thành sẽ được đưa vào Callback queue để xử lý. Single-thread nên stack chỉ có 1 function được xử lý mỗi lần. Và điều này có thể giải thích phần nào cho câu hỏi về Promise. Dù myResolve được gọi ngay lập tức nhưng nó lại được đưa vào Callback queue và chỉ khi stack thực hiện tất cả các hàm và stack rỗng queue mới được đưa vào để xử lý.</p>
+<pre><code>function myFunction() {
+  new Promise((myResolve) =&gt; {
+    myResolve(1);
+  }).then(value =&gt; console.log(value));
+  console.log(2);
+  console.log(3);
+  console.log(4);
+  console.log(5);
+}
+</code></pre>
+<p>Ta hãy nhìn lại ví dụ trên. Và chắc chắn rồi ở đoạn code này đáp án là 2, 3, 4, 5, 1</p>
+<p>Một trong những điểm lợi của Promise là tránh callback hell bằng cách dùng then chain</p>
+<p><img alt="" src="../../imgs/then-chain.png" /></p>
+<p>Một Promise có thể là một trong 3 trạng thái sau: pending, fulfilled và rejected và ta có thể dùng .then, .catch, .finally để làm callback</p>
+<p>Ta xét một ví dụ sau:</p>
+<pre><code>console.log(&quot;Start&quot;)
+setTimeout(() =&gt; {
+  console.log(&quot;Timeout!&quot;)
+}, 0)
+Promise.resolve(&quot;Promise!&quot;)
+  .then(res =&gt; console.log(res))
+console.log(&quot;End!&quot;)
+</code></pre>
+<p>Thật sự thì Event Loop có 2 dạng queues: (macro) task queue và (micro) task queue. Trong đó (macro) task gồm setTimeout, setInterval, setImmediate. Microtask gồm Promise callback, ... Trong đó microtask sẽ được thực hiện trước macrotask, do đó kết quả của đoạn code trên là</p>
+<pre><code>Start!
+End!
+Promise!
+Timeout!
+</code></pre>
+<h2 id="asyncawait">Async/Await</h2>
+<p>Khi await được gọi, nó sẽ đợi cho tới khi Promise kết thúc và trả về kết quả. Thay vì phải .then để gọi như ở Promise thì ta có thể sử dụng luôn await còn về try catch thì có thể try catch thẳng ở await thay vì .then rồi .catch</p>
+<h2 id="asyncawait-co-the-thay-the-uoc-promise">Async/Await có thể thay thế được Promise</h2>
+<ul>
+<li>Không hoàn toàn vì Async/Await vẫn sử dụng Promise ngầm. Ngoài ra có một số thao tác sử dụng Promise sẽ đem lại hiệu quả tốt hơn</li>
+</ul>
+<pre><code>async  function  getABC () {
+  let A = await getValueA(); // getValueA takes 2 second to finish
+  let B = await getValueB(); // getValueB takes 4 second to finish
+  let C = await getValueC(); // getValueC takes 3 second to finish
+
+  return A * B * C;
+}
+</code></pre>
+<p>Nhìn vào ví dụ trên await sẽ dừng hàm async để chờ cho hành động được thực hiện xong mới chuyển sang hành động tiếp theo nên tổng thời gian để hoàn thành là 9s.</p>
+<pre><code>async  function  getABC () {
+  // Promise.all() allows us to send all requests at the same time.
+  let results = await Promise.all([ getValueA, getValueB, getValueC ]);
+
+  return results.reduce((total,value) =&gt; total * value);
+}
+</code></pre>
+<p>Tuy nhiên cách tối ưu hơn là ta cho 3 Promise chạy cùng lúc thì khi đó chỉ cần chờ cho hành động lâu nhất hoàn thành ở đây là 4s để thực hiện xong hàm. Tất nhiên đa số các trường hợp chúng ta sử dụng Async/Await là cho việc fetch API và chuyển thành json và nó phải thực hiện liên tục nhau thì sẽ không sử dụng Promise.all được ở trường hợp đó.</p>
+<p>Thêm nữa là khi đụng vào từ khóa await hàm async sẽ được đưa vào microtask để thực hiện tiếp, điều này có nghĩa là các hành động khác sẽ tiếp tục được chạy chỉ có hành động trong hàm async bị dừng lại để đảm bảo yếu tố bất đồng bộ trong JS.</p>
+<h2 id="this-la-gi">this là gì?</h2>
+<p>Có một điều chúng ta biết rằng this refers to an object. Tuy nhiên this không chỉ đơn giản như vậy. Nếu chúng ta gọi this ở browser nó sẽ là Window object</p>
+<pre><code>console.log(this);
+</code></pre>
+<p>Nhưng nếu chúng ta gọi this ở bên trong một object thì đó là object đó và chúng ta có thể truy cập vào properties và methods của chúng</p>
+<pre><code>const myObj = {
+  myThis : function() {
+    return this;
+  }
+}
+</code></pre>
+<p>Nếu gọi this trong một function thì đó sẽ là object Window</p>
+<h3 id="arrow-functions">Arrow functions</h3>
+<p>Điều đặt biệt là arrow function không hoạt động giống với function vì nó không tạo ra execution context mà kế thừa từ hàm ngoài arrow function được định nghĩa. Vậy trước hết chúng ta cần tìm hiểu vậy execution context là gì?</p>
+<h3 id="execution-context">Execution Context</h3>
+<p>Execution Context là cách mà Javascript được thực thi bao gồm creation phase và execution phase. Hãy xét ví dụ sau:</p>
+<pre><code>let x = 10;
+
+function timesTen(a){
+    return a * 10;
+}
+
+let y = timesTen(x);
+
+console.log(y); // 100
+</code></pre>
+<p>Và đây là cách chúng được thực thi ở creation phase</p>
+<p><img alt="" src="../../imgs/creation-phase.png" /></p>
+<p>Đầu tiên Global Object sẽ được khởi tạo, rồi sẽ được this object bind vào. Sau đó heap memory sẽ được set up cho biến và hàm references. Cuối cùng là lưu các khai báo hàm và các biến thành undefined.</p>
+<p><img alt="" src="../../imgs/execution-phase.png" />
+<img alt="" src="../../imgs/function-execution-context.png" /></p>
+<p>Điều quan trọng ở đây là với mỗi function call, Javascript engine tạo ra một function execution context. Cũng tương tự global execution context nhưng thay vì tạo global object, arguments object sẽ được tạo liên quan đến tất cả biến của hàm.</p>
+<p><img alt="" src="../../imgs/function-execution-context-2.png" /></p>
+<p>Trở về với arrow function, việc không tạo ra execution context nhưng nhận this từ hàm ngoài nó cũng cho this là Window. Và điều cần lưu ý là ta không thể lấy ra this nếu thực hiện arrow function trong object.</p>
+<p>Và cuối cùng this trong Event Listener sẽ liên quan đến DOM element được kích hoạt.</p>
+<h2 id="this-methods">this methods</h2>
+<p>Có 3 methods là call, apply và bind. Với call và apply, nói theo một cách đơn giản, chúng ta có thể object nào mà keyword this refer đến, xác định tham số "this" cho một function</p>
+<h3 id="bind">Bind</h3>
+<pre><code>const myObj = {
+  name: &quot;Khoi&quot;,
+  age: 20
+}
+
+function display() {
+  console.log(this.name + &quot; &quot; + this.age);
+}
+
+let showData = display.bind(myObj)
+showData()
+showData()
+</code></pre>
+<h3 id="call">Call</h3>
+<pre><code>function display(school, hometown) {
+  console.log(this.name + &quot; &quot; + this.age + &quot; &quot; + school + &quot; &quot; + hometown);
+}
+
+display.call(myObj, &quot;HCMUS&quot;, &quot;Long An&quot;)
+</code></pre>
+<h3 id="apply">Apply</h3>
+<pre><code>function display(school, hometown) {
+  console.log(this.name + &quot; &quot; + this.age + &quot; &quot; + school + &quot; &quot; + hometown);
+}
+
+display.apply(myObj, [&quot;HCMUS&quot;, &quot;Long An&quot;])
+</code></pre>
+<h2 id="map-filter-and-reduce">Map, filter and reduce</h2>
+<h3 id="map-thao-tac-voi-oi-tuong-mang-e-thay-oi-cac-gia-tri">Map (thao tác với đối tượng, mảng để thay đổi các giá trị)</h3>
+<pre><code>const myArray = [1, 2, 3, 4]
+const myEvenArray= myArray.map(value =&gt; value * 2)
+</code></pre>
+<h3 id="filter-filter-mang-neu-return-true-thi-giu-lai-phan-tu-false-thi-loai">Filter (Filter mảng nếu return true thì giữ lại phần tử, false thì loại)</h3>
+<pre><code>const myEvenArray= myArray.filter(value =&gt; { return value % 2 === 0; })
+</code></pre>
+<h3 id="reduce-tinh-luy-cac-gia-tri-tra-ve">Reduce (Tính lũy các giá trị trả về)</h3>
+<h2 id="iife-ham-goi-ngay-lap-tuc">IIFE (hàm gọi ngay lập tức)</h2>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

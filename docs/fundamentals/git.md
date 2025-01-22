@@ -12,11 +12,21 @@ git checkout -b "feature/827-show-product-list"
 
 ## Pull request
 
-Nếu đó là task: Minor: [ticket-number] - [description]  
-VD: Minor: 827 - show product list
+Nếu đó là task:  
+Branch: feature/[ticket-number]  
+PR title: Minor: [ticket-number] - [description]
 
-Nếu đó là bug: Patch: [ticket-number] - [description]  
-VD: Patch: 828 - Product not show
+VD:  
+Branch: feature/827-show-product-list  
+PR title: Minor: 827 - Show product list
+
+Nếu đó là bug:  
+Branch: bugfix/[ticket-number]  
+PR title: Patch: [ticket-number] - [description]
+
+VD:  
+Branch: bugfix/828-product-not-show  
+PR title: Patch: 828 - Product not show
 
 ## Stash
 
@@ -34,7 +44,7 @@ git cherry-pick commitSha
 
 ## Merge và rebase
 
-Giả sửa chúng ta có nhánh develop và feature. Trong hầu hết các hợp merge sẽ được sử dụng, cách merge làm là tạo một commit merge cùng với các commit từ feature vào develop.
+Giả sửa chúng ta có nhánh develop và feature. Trong hầu hết các trường hợp merge sẽ được sử dụng, cách merge làm là tạo một commit merge cùng với các commit từ feature vào develop.
 
 Rebase giúp cho lịch sử commit đẹp hơn khi thay vì tạo một merge commit, nó sẽ sắp xếp vào develop. Điều này giống như việc chúng ta cherry pick từng commit vào develop.
 

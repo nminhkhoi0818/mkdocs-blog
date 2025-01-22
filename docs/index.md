@@ -1,6 +1,6 @@
 ## Đây là đâu?
 
-Đây là một chiếc blog nhỏ nhằm document technical chủ yếu về frontend development.
+Đây là một chiếc blog nhỏ chia sẻ kiến thức chủ yếu về frontend development. Nội dung chủ yếu sẽ tập trung vào Javascript, Typescript, Angular.
 
 ## Kiến thức ở đây có đáng tin không?
 
